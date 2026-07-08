@@ -39,8 +39,7 @@ export default function Hero() {
             />
           </div>
           <span className={styles.stamp}>
-            <span>Sales &amp; Operations</span>
-            <span>Professional</span>
+            <span>Available for Hire</span>
           </span>
         </div>
       </div>
