@@ -1,0 +1,143 @@
+.timeline {
+  position: relative;
+  padding-left: 42px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background: repeating-linear-gradient(
+    to bottom,
+    var(--amber) 0,
+    var(--amber) 8px,
+    transparent 8px,
+    transparent 16px
+  );
+  height: 0%;
+  transition: height 1.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.timeline:global(.reveal-visible)::before {
+  height: 100%;
+}
+
+.stop {
+  position: relative;
+  padding-bottom: 40px;
+}
+
+.stop:last-child {
+  padding-bottom: 0;
+}
+
+.stop::before {
+  content: "";
+  position: absolute;
+  left: -42px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--amber);
+  border: 3px solid var(--paper);
+  box-shadow: 0 0 0 2px var(--amber);
+  opacity: 0;
+  transform: scale(0.4);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition-delay: calc(var(--i) * 140ms + 200ms);
+}
+
+.timeline:global(.reveal-visible) .stop::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.stopHead {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px 16px;
+}
+
+.stopRole {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 21px;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+.stopPeriod {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  color: var(--teal);
+  white-space: nowrap;
+}
+
+.stopOrg {
+  margin-top: 4px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--ink-soft);
+}
+
+.stopOrg a {
+  color: var(--ink-soft);
+  text-decoration: underline;
+  text-decoration-color: var(--amber);
+  text-underline-offset: 3px;
+}
+
+.stopOrg a:hover {
+  color: var(--amber);
+}
+
+.stopTag {
+  font-weight: 400;
+  color: var(--muted);
+}
+
+.points {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.points li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14.5px;
+  line-height: 1.65;
+  color: var(--ink-soft);
+}
+
+.points li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: var(--amber);
+  font-size: 11px;
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    padding-left: 30px;
+  }
+  .timeline::before {
+    left: 4px;
+  }
+  .stop::before {
+    left: -30px;
+  }
+  .stopRole {
+    font-size: 18px;
+  }
+}
