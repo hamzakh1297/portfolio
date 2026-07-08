@@ -39,7 +39,8 @@ export default function Hero() {
             />
           </div>
           <span className={styles.stamp}>
-            <span>Available for Hire</span>
+            <span>Available for</span>
+            <span>Hire</span>
           </span>
         </div>
       </div>
