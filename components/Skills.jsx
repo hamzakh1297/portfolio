@@ -19,7 +19,7 @@ const groups = [
   },
   {
     label: "Management Tools",
-    items: ["Google Sheets & Docs", "GitHub", "Trello", "Figma", "HR Management Software"],
+    items: ["Google Sheets & Docs", "GitHub", "Trello", "Figma", "Facebook Ads", "HR Management Software"],
   },
 ];
 

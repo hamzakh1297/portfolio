@@ -28,15 +28,35 @@
 .contacts {
   margin-top: 32px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
 }
 
-.contactBtn svg {
-  width: 16px;
-  height: 16px;
+.socialLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(240, 239, 230, 0.22);
+  color: var(--paper);
+  background: rgba(240, 239, 230, 0.06);
+  text-decoration: none;
   flex-shrink: 0;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+.socialLink:hover {
+  border-color: var(--amber);
+  background: rgba(217, 143, 46, 0.14);
+  color: var(--amber-soft);
+}
+
+.socialLink svg {
+  width: 18px;
+  height: 18px;
   fill: none;
   stroke: currentColor;
   stroke-width: 1.75;
@@ -44,7 +64,7 @@
   stroke-linejoin: round;
 }
 
-.contactBtn:nth-child(2) svg {
+.socialLinkFilled svg {
   fill: currentColor;
   stroke: none;
 }
