@@ -17,7 +17,7 @@ export default function Footer() {
         <Reveal delay={100} className={styles.contacts}>
           <a
             className={`${styles.socialLink} ${styles.socialLinkFilled}`}
-            href="https://wa.link/kmsemt"
+            href="https://wa.link/m8dp1x"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="WhatsApp"
