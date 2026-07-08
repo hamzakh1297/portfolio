@@ -40,7 +40,7 @@ export default function Hero() {
           </div>
           <span className={styles.stamp}>
             <span>Sales &amp; Operations</span>
-            <span>Expert</span>
+            <span>Professional</span>
           </span>
         </div>
       </div>
