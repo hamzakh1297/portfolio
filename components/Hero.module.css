@@ -23,12 +23,6 @@
   align-items: center;
 }
 
-.eyebrow {
-  opacity: 0;
-  animation: fadeUp 0.7s ease forwards;
-  animation-delay: 0.05s;
-}
-
 .name {
   font-family: var(--font-display);
   text-transform: uppercase;
@@ -36,11 +30,10 @@
   font-size: clamp(44px, 7vw, 84px);
   line-height: 0.94;
   letter-spacing: 0.005em;
-  margin-top: 14px;
   color: var(--paper);
   opacity: 0;
   animation: fadeUp 0.75s ease forwards;
-  animation-delay: 0.15s;
+  animation-delay: 0.1s;
 }
 
 .name span {
@@ -70,81 +63,14 @@
   animation-delay: 0.4s;
 }
 
-.actions {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 16px;
-  opacity: 0;
-  animation: fadeUp 0.75s ease forwards;
-  animation-delay: 0.52s;
-}
-
-.social {
-  display: flex;
-  gap: 10px;
-}
-
-.socialLink {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 50%;
-  border: 1px solid rgba(240, 239, 230, 0.22);
-  color: var(--paper);
-  background: rgba(240, 239, 230, 0.06);
-  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
-}
-
-.socialLink:hover {
-  border-color: var(--amber);
-  background: rgba(217, 143, 46, 0.14);
-  color: var(--amber-soft);
-}
-
-.socialLink svg {
-  width: 18px;
-  height: 18px;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.75;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.socialLinkFilled svg {
-  fill: currentColor;
-  stroke: none;
-}
-
-.phone {
-  font-family: var(--font-mono);
-  font-size: 13px;
-  letter-spacing: 0.04em;
-  color: rgba(240, 239, 230, 0.82);
-  text-decoration: none;
-  padding: 10px 16px;
-  border-radius: 4px;
-  border: 1px solid rgba(240, 239, 230, 0.18);
-  transition: border-color 0.2s ease, color 0.2s ease;
-}
-
-.phone:hover {
-  border-color: var(--amber);
-  color: var(--amber-soft);
-}
-
 .badges {
-  margin-top: 26px;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 8px 18px;
   opacity: 0;
   animation: fadeUp 0.75s ease forwards;
-  animation-delay: 0.64s;
+  animation-delay: 0.52s;
 }
 
 .badges li {
@@ -260,7 +186,6 @@
     max-width: 100%;
     margin-inline: auto;
   }
-  .actions,
   .badges {
     justify-content: center;
   }
@@ -273,11 +198,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .eyebrow,
   .name,
   .role,
   .intro,
-  .actions,
   .badges,
   .photoWrap {
     opacity: 1;
