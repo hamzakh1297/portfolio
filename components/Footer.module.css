@@ -25,16 +25,8 @@
   max-width: 44ch;
 }
 
-.contacts {
-  margin-top: 32px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-}
-
 .meta {
-  margin-top: 56px;
+  margin-top: 40px;
   font-family: var(--font-mono);
   font-size: 11.5px;
   letter-spacing: 0.04em;

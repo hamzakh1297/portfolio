@@ -14,23 +14,6 @@ export default function Footer() {
           </p>
         </Reveal>
 
-        <Reveal delay={100} className={styles.contacts}>
-          <a className="btn btn-primary" href="mailto:hamza@naxotop.com">
-            hamza@naxotop.com
-          </a>
-          <a className="btn btn-ghost" href="tel:+923051958846">
-            +92 305 195 8846
-          </a>
-          <a
-            className="btn btn-ghost"
-            href="https://www.linkedin.com/in/m-hamza-kh/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            linkedin.com/in/m-hamza-kh
-          </a>
-        </Reveal>
-
         <p className={styles.meta}>Mian Channu, Punjab, Pakistan · © {new Date().getFullYear()} Hamza Khalid</p>
       </div>
     </footer>
