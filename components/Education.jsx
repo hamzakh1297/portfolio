@@ -5,7 +5,6 @@ const education = [
   { title: "Web Development", sub: "Online Resources", year: "2020" },
   { title: "Intermediate (Incomplete)", sub: "Divisional Public School", year: "2016" },
   { title: "AutoCAD — Technical Drafting", sub: "TEVTA, Cami", year: "2015" },
-  { title: "Matriculation", sub: "The Citizens Foundation School", year: "2014" },
 ];
 
 const languages = [

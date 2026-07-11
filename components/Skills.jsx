@@ -3,23 +3,44 @@ import styles from "./Skills.module.css";
 
 const groups = [
   {
-    label: "Sales & Operations",
+    label: "Sales & Business Dev",
     items: [
       "Field Sales",
       "B2B Acquisition",
       "Lead Generation",
       "Negotiation",
-      "Order Management",
-      "Process Improvement",
+      "Client Relations",
+      "Cold Outreach",
     ],
   },
   {
-    label: "Technology",
-    items: ["AI Tools (ChatGPT, Claude, Gemini)", "App Marketing", "HTML / CSS / JS", "Video Editing"],
+    label: "Operations & Management",
+    items: [
+      "Startup Operations",
+      "Team Management",
+      "Project Management",
+      "Order Management",
+      "Process Improvement",
+      "Hiring & HR",
+      "Vendor Coordination",
+    ],
   },
   {
-    label: "Management Tools",
-    items: ["Google Sheets & Docs", "GitHub", "Trello", "Figma", "Facebook Ads", "HR Management Software"],
+    label: "Marketing & Growth",
+    items: ["App Growth Marketing", "Social Media Ads", "Content Creation", "Video Editing", "Launch Planning"],
+  },
+  {
+    label: "Technology & Tools",
+    items: [
+      "AI Tools (ChatGPT, Claude, Gemini)",
+      "HTML / CSS / JS",
+      "UI/UX Design (Web Apps)",
+      "Google Sheets & Docs",
+      "GitHub",
+      "Trello",
+      "ClickUp",
+      "HR Management Software",
+    ],
   },
 ];
 

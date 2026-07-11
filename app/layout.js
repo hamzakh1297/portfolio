@@ -25,7 +25,7 @@ const mono = JetBrains_Mono({
 export const metadata = {
   title: "Hamza Khalid — Sales & Operations Professional",
   description:
-    "Portfolio of Hamza Khalid — co-founder of Naxotop and NayaBazar.pk, sales & operations professional based in Mian Channu, Punjab, Pakistan.",
+    "Portfolio of Hamza Khalid — co-founder of Naxotop PVT LTD and NayaBazar.pk, sales & operations professional based in Mian Channu, Punjab, Pakistan.",
 };
 
 export default function RootLayout({ children }) {

@@ -2,10 +2,10 @@ import Reveal from "./Reveal";
 import styles from "./About.module.css";
 
 const stats = [
-  { value: "6 yrs", label: "Running Naxotop.com" },
-  { value: "100+", label: "Shops onboarded in 1.5 months" },
+  { value: "6+ yrs", label: "Running Naxotop PVT LTD" },
+  { value: "140+", label: "Daycares served — France client" },
+  { value: "11,000+", label: "Products listed on NayaBazar" },
   { value: "30,000+", label: "App downloads in year one" },
-  { value: "100–150", label: "Daily deliveries managed" },
 ];
 
 export default function About() {
@@ -16,19 +16,20 @@ export default function About() {
           <p className="eyebrow">Profile</p>
           <h2 className="section-title">Two ventures, one operator</h2>
           <p className="section-sub">
-            Sales &amp; operations professional with hands-on experience building
-            two businesses from zero. Started in field sales, grew into full
-            operations management.
+            Sales &amp; operations professional with 6+ years building and
+            running two businesses — from international client delivery to
+            local logistics on the ground.
           </p>
         </Reveal>
 
         <Reveal delay={100}>
           <p className={styles.summary}>
-            Co-founded <strong>Naxotop</strong> (web development company, 6 years) and{" "}
-            <strong>NayaBazar.pk</strong> (local delivery startup) — onboarding 100+
-            shops, crossing 30,000+ app downloads, and running 100–150 daily
-            deliveries. I move fast, I&apos;m comfortable with AI and dev tools, and
-            I thrive when the pressure is on.
+            Co-founded <strong>Naxotop PVT LTD</strong> (web development company)
+            managing international client projects, and{" "}
+            <strong>NayaBazar.pk</strong> (local delivery startup) — handling
+            everything from app design and launch to onboarding 100+ shops,
+            30,000+ downloads, and 100–150 daily deliveries. Skilled in project
+            management, team building, marketing, and end-to-end operations.
           </p>
         </Reveal>
 

@@ -6,6 +6,8 @@ export default function Hero() {
     <header className={styles.hero}>
       <div className={`container ${styles.inner}`}>
         <div className={styles.copy}>
+          <p className={`eyebrow ${styles.eyebrow}`}>Dispatch Manifest &middot; Mian Channu, Punjab, PK</p>
+
           <h1 className={styles.name}>
             Hamza <span>Khalid</span>
           </h1>
@@ -13,18 +15,28 @@ export default function Hero() {
           <p className={styles.role}>Sales &amp; Operations Professional</p>
 
           <p className={styles.intro}>
-            I build things and I sell them — hands-on operator with two ventures behind me:
-            a web development company and a local delivery startup that put 100+ shops
-            and 30,000+ app downloads on the map. Fast executor, tech-savvy, and calm
-            under pressure.
+            I build things and I sell them — 6+ years running two businesses end to end.
+            Co-founded Naxotop PVT LTD, delivering web platforms for international
+            clients across France and India, and NayaBazar.pk, a delivery startup I
+            grew to 30,000+ app downloads from scratch.
           </p>
 
-          <ul className={styles.badges}>
-            <li>Immediate joining</li>
-            <li>Full-time</li>
-            <li>Field / Office</li>
-            <li>Open to relocation</li>
-          </ul>
+          <div className={styles.actions}>
+            <a className="btn btn-primary" href="mailto:hamza@naxotop.com">
+              Email Me
+            </a>
+            <a
+              className="btn btn-ghost"
+              href="https://www.linkedin.com/in/m-hamza-kh/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              LinkedIn ↗
+            </a>
+            <a className="btn btn-ghost" href="tel:+923051958846">
+              +92 305 195 8846
+            </a>
+          </div>
         </div>
 
         <div className={styles.photoWrap}>
@@ -39,8 +51,8 @@ export default function Hero() {
             />
           </div>
           <span className={styles.stamp}>
-            <span>Available</span>
-            <span>for Hire</span>
+            <span>Verified</span>
+            <span>Operator</span>
           </span>
         </div>
       </div>

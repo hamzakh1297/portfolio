@@ -3,15 +3,19 @@ import styles from "./Experience.module.css";
 
 const stops = [
   {
-    role: "Co-Founder",
-    org: "Naxotop.com",
+    role: "Co-Founder & Project Manager",
+    org: "Naxotop.com PVT LTD",
     href: "https://naxotop.com",
-    tag: "Web Development Co. · Pakistan",
+    tag: "Web Development Company · Pakistan",
     period: "2020 — 2026",
     points: [
-      "Co-founded and ran a web development company for 6 years.",
-      "Managed client projects end-to-end as the main link between clients and the dev team.",
-      "Tracked deadlines and deliverables to ensure on-time project delivery.",
+      "Co-founded and managed a web development company for 6 years, overseeing projects from design to delivery.",
+      "Led a major project for a France-based daycare company (140+ daycares) — managed development of their main web application, contract signing system, and employee tracking tool end-to-end.",
+      "Managed full-cycle web tool projects for an India-based client — handled design, development coordination, and delivery of video & image editing web tools from scratch.",
+      "Built an internal Employee Management Web Tool for Naxotop's own operations.",
+      "Listed company products on the website and produced marketing & guide videos published on YouTube.",
+      "Delivered multiple web projects for international and local clients across various industries.",
+      "Acted as the main link between clients and the dev team — managing timelines, feedback, and delivery.",
     ],
   },
   {
@@ -21,26 +25,14 @@ const stops = [
     tag: "Local E-Commerce & Delivery Startup · Mian Channu",
     period: "2023 — 2026",
     points: [
-      "Co-founded a local delivery app connecting shops with customers.",
-      "Onboarded 100+ shops in 1.5 months via direct field visits.",
-      "Grew the app to 30,000+ downloads in one year through hands-on marketing.",
-      "Managed 100–150 daily deliveries and full operations end-to-end.",
-      "Gathered customer feedback and coordinated with the tech team to improve the app.",
+      "Designed the entire app UI/UX from scratch and coordinated the development team throughout the build.",
+      "Created the launch plan, marketing strategy, social media ads, banner designs, and flyer campaigns.",
+      "Onboarded 100+ local shops with 11,000+ products listed on the platform.",
+      "Grew the app to 30,000+ downloads in one year through hands-on marketing execution.",
+      "Managed 100–150 daily deliveries — ensuring on-time, quality order fulfillment.",
+      "Handled team hiring, staff management, and all office & daily operations.",
+      "Continuously collected customer feedback and improved the platform based on real user data.",
     ],
-  },
-  {
-    role: "Salesman",
-    org: "General Store, Shah Alam Market",
-    tag: "Lahore",
-    period: "2017 — 2018",
-    points: [],
-  },
-  {
-    role: "Production Staff",
-    org: "NTN Fabric Textile",
-    tag: "Gajjumata, Lahore",
-    period: "2018 — 2019",
-    points: [],
   },
 ];
 
@@ -52,8 +44,8 @@ export default function Experience() {
           <p className="eyebrow">The Route</p>
           <h2 className="section-title">Career, mapped like a delivery run</h2>
           <p className="section-sub">
-            Every stop built on the last — from selling on the shop floor to
-            running two companies at once.
+            Two ventures, six years, one route — from international client
+            delivery on the web to daily operations on the ground.
           </p>
         </Reveal>
 
