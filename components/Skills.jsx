@@ -4,14 +4,7 @@ import styles from "./Skills.module.css";
 const groups = [
   {
     label: "Sales & Business Dev",
-    items: [
-      "Field Sales",
-      "B2B Acquisition",
-      "Lead Generation",
-      "Negotiation",
-      "Client Relations",
-      "Cold Outreach",
-    ],
+    items: ["Field Sales", "B2B Acquisition", "Lead Generation", "Negotiation", "Client Relations", "Cold Outreach"],
   },
   {
     label: "Operations & Management",
@@ -33,13 +26,15 @@ const groups = [
     label: "Technology & Tools",
     items: [
       "AI Tools (ChatGPT, Claude, Gemini)",
-      "HTML / CSS / JS",
+      "HTML / CSS / JS / PHP",
       "UI/UX Design (Web Apps)",
+      "Figma",
+      "Meta Ads",
       "Google Sheets & Docs",
       "GitHub",
       "Trello",
-      "ClickUp",
       "HR Management Software",
+      "WordPress",
     ],
   },
 ];

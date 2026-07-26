@@ -1,5 +1,4 @@
 :root {
-  /* --- Palette: "Dispatch Manifest" --- */
   --paper: #f0efe6;
   --paper-2: #e7e3d4;
   --card: #fbfaf5;
@@ -15,7 +14,7 @@
   --container: 1080px;
 }
 
-* ,
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -146,6 +145,12 @@ ul {
   transform: translateY(-2px);
   border-color: var(--amber);
   color: var(--amber);
+}
+
+.btn svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
 }
 
 /* Tags */

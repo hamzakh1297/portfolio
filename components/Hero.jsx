@@ -5,9 +5,7 @@ export default function Hero() {
   return (
     <header className={styles.hero}>
       <div className={`container ${styles.inner}`}>
-        <div className={styles.copy}>
-          <p className={`eyebrow ${styles.eyebrow}`}>Dispatch Manifest &middot; Mian Channu, Punjab, PK</p>
-
+        <div>
           <h1 className={styles.name}>
             Hamza <span>Khalid</span>
           </h1>
@@ -20,23 +18,6 @@ export default function Hero() {
             clients across France and India, and NayaBazar.pk, a delivery startup I
             grew to 30,000+ app downloads from scratch.
           </p>
-
-          <div className={styles.actions}>
-            <a className="btn btn-primary" href="mailto:hamza@naxotop.com">
-              Email Me
-            </a>
-            <a
-              className="btn btn-ghost"
-              href="https://www.linkedin.com/in/m-hamza-kh/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              LinkedIn ↗
-            </a>
-            <a className="btn btn-ghost" href="tel:+923051958846">
-              +92 305 195 8846
-            </a>
-          </div>
         </div>
 
         <div className={styles.photoWrap}>
@@ -51,8 +32,8 @@ export default function Hero() {
             />
           </div>
           <span className={styles.stamp}>
-            <span>Verified</span>
-            <span>Operator</span>
+            <span>Sales</span>
+            <span>Expert</span>
           </span>
         </div>
       </div>

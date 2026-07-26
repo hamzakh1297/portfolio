@@ -2,10 +2,10 @@ import Reveal from "./Reveal";
 import styles from "./About.module.css";
 
 const stats = [
-  { value: "6+ yrs", label: "Running Naxotop PVT LTD" },
-  { value: "140+", label: "Daycares served — France client" },
-  { value: "11,000+", label: "Products listed on NayaBazar" },
-  { value: "30,000+", label: "App downloads in year one" },
+  { value: "50+", label: "Web projects managed at Naxotop PVT LTD" },
+  { value: "0 → 1", label: "Built & managed the NayaBazar app from scratch" },
+  { value: "100–150", label: "Daily deliveries — full system operated" },
+  { value: "100+", label: "Local shops onboarded via direct field visits" },
 ];
 
 export default function About() {
