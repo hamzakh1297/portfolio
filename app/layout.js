@@ -23,9 +23,33 @@ const mono = JetBrains_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL("https://hamza-khalid-portfolio.vercel.app"),
   title: "Hamza Khalid — Sales & Operations Professional",
   description:
     "Portfolio of Hamza Khalid — co-founder of Naxotop PVT LTD and NayaBazar.pk, sales & operations professional based in Mian Channu, Punjab, Pakistan.",
+  openGraph: {
+    type: "website",
+    title: "Hamza Khalid — Sales & Operations Professional",
+    description:
+      "Co-Founder at Naxotop PVT LTD & NayaBazar.pk — 50+ web projects managed, 30,000+ app downloads, 100+ shops onboarded on the ground.",
+    url: "https://hamza-khalid-portfolio.vercel.app/",
+    siteName: "Hamza Khalid — Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Hamza Khalid — Sales & Operations Professional",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hamza Khalid — Sales & Operations Professional",
+    description:
+      "Co-Founder at Naxotop PVT LTD & NayaBazar.pk — 50+ web projects managed, 30,000+ app downloads, 100+ shops onboarded on the ground.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({ children }) {

@@ -3,7 +3,7 @@
   color: var(--paper);
   position: relative;
   overflow: hidden;
-  padding: 64px 0 56px;
+  padding: 128px 0 56px;
 }
 
 .hero::before {
@@ -61,6 +61,16 @@
   opacity: 0;
   animation: fadeUp 0.75s ease forwards;
   animation-delay: 0.34s;
+}
+
+.actions {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  opacity: 0;
+  animation: fadeUp 0.75s ease forwards;
+  animation-delay: 0.46s;
 }
 
 .photoWrap {
@@ -164,6 +174,7 @@
   .name,
   .role,
   .intro,
+  .actions,
   .photoWrap {
     opacity: 1;
     animation: none;

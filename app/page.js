@@ -1,3 +1,5 @@
+import Nav from "@/components/Nav";
+import BackToTop from "@/components/BackToTop";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
@@ -8,14 +10,18 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <About />
-      <Experience />
-      <Projects />
-      <Skills />
-      <Education />
-      <Footer />
-    </main>
+    <>
+      <Nav />
+      <BackToTop />
+      <main>
+        <Hero />
+        <About />
+        <Experience />
+        <Projects />
+        <Skills />
+        <Education />
+        <Footer />
+      </main>
+    </>
   );
 }
