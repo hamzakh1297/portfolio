@@ -156,6 +156,9 @@
 }
 
 @media (max-width: 860px) {
+  .actions {
+    justify-content: center;
+  }
   .inner {
     grid-template-columns: 1fr;
     text-align: center;
