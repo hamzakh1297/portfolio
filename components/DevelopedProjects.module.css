@@ -110,7 +110,7 @@
 }
 
 .coverThumbFill img {
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .coverBtn:hover .coverThumb img {
