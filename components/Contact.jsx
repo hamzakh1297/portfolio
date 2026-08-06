@@ -6,7 +6,7 @@ import styles from "./Contact.module.css";
 
 // Get a free access key at https://web3forms.com (sign up with hamza@naxotop.com)
 // then paste it below. This lets the form send real emails with no backend server.
-const WEB3FORMS_ACCESS_KEY = "YOUR_WEB3FORMS_ACCESS_KEY";
+const WEB3FORMS_ACCESS_KEY = "cc62cdf3-09cd-4146-b771-9b3f43a9f7ae";
 
 const socials = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/m-hamza-kh/", icon: <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8.34 18V9.75H5.67V18h2.67zm-1.33-9.4c.93 0 1.5-.62 1.5-1.38-.02-.78-.57-1.37-1.48-1.37s-1.5.6-1.5 1.37c0 .76.57 1.38 1.48 1.38zM18.34 18v-4.7c0-2.52-1.35-3.69-3.14-3.69-1.45 0-2.1.8-2.46 1.36V9.75h-2.67c.03.7 0 8.25 0 8.25h2.67v-4.6c0-.25.02-.5.1-.68.2-.5.66-1.03 1.43-1.03 1 0 1.4.77 1.4 1.9V18h2.67z" /></svg> },
