@@ -115,14 +115,13 @@ export default function DevelopedProjects() {
                     <span className="dot dot-green"></span>
                     <span className="browser-url">{project.id === "pos-app" ? "MorEazy POS" : "moreazy.com"}</span>
                   </div>
-                  <div className={styles.coverThumb}>
+                  <div className={`${styles.coverThumb} ${project.id === "licensing-website" ? styles.coverThumbFill : ""}`}>
                     <Image
                       src={project.cover}
                       alt={`${project.title} main screen`}
                       fill
                       sizes="(max-width: 860px) 100vw, 460px"
                       unoptimized
-                      style={{ objectFit: project.id === "licensing-website" ? "fill" : "contain" }}
                     />
                     <div className={styles.coverOverlay}>
                       <span className={styles.coverCta}>

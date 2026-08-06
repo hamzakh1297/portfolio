@@ -11,7 +11,7 @@ export default function Footer() {
           Full Stack Web Developer &amp; Sales Professional
         </p>
         <p className={styles.meta}>
-          Mian Channu, Punjab, Pakistan &middot; &copy; {new Date().getFullYear()} Hamza Khalid
+          &copy; {new Date().getFullYear()} Hamza Khalid
         </p>
       </div>
     </footer>

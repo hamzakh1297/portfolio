@@ -104,8 +104,13 @@
 }
 
 .coverThumb img {
+  object-fit: contain;
   object-position: top;
   transition: transform 0.4s ease;
+}
+
+.coverThumbFill img {
+  object-fit: fill;
 }
 
 .coverBtn:hover .coverThumb img {
