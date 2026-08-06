@@ -51,6 +51,7 @@
 }
 
 .navLinks a {
+  position: relative;
   font-family: var(--font-mono);
   font-size: 11.5px;
   letter-spacing: 0.06em;
@@ -60,8 +61,26 @@
   transition: color 0.2s ease;
 }
 
+.navLinks a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 1.5px;
+  background: var(--amber);
+  border-radius: 1px;
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.25s ease;
+}
+
 .navLinks a:hover {
   color: var(--amber);
+}
+
+.navLinks a:hover::after {
+  transform: scaleX(1);
 }
 
 .navActions {

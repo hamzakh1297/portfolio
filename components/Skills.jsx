@@ -3,6 +3,19 @@ import styles from "./Skills.module.css";
 
 const groups = [
   {
+    label: "Full-Stack Development",
+    items: [
+      "Electron.js",
+      "Node.js",
+      "React / Next.js",
+      "PHP & MySQL",
+      "REST API Design",
+      "SQLite / better-sqlite3",
+      "Bootstrap 5 & jQuery",
+      "HTML / CSS / JS",
+    ],
+  },
+  {
     label: "Sales & Business Dev",
     items: ["Field Sales", "B2B Acquisition", "Lead Generation", "Negotiation", "Client Relations", "Cold Outreach"],
   },
@@ -23,10 +36,9 @@ const groups = [
     items: ["App Growth Marketing", "Social Media Ads", "Content Creation", "Video Editing", "Launch Planning"],
   },
   {
-    label: "Technology & Tools",
+    label: "Tools & Design",
     items: [
       "AI Tools (ChatGPT, Claude, Gemini)",
-      "HTML / CSS / JS / PHP",
       "UI/UX Design (Web Apps)",
       "Figma",
       "Meta Ads",

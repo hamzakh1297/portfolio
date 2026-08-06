@@ -9,8 +9,8 @@ export default function Footer() {
           <p className="eyebrow">Next Stop</p>
           <h2 className={styles.title}>Let&apos;s get to work</h2>
           <p className={styles.text}>
-            Open to sales, operations, and project management roles — reach out
-            and let&apos;s talk about what you&apos;re building.
+            Open to full-stack development, sales, and operations roles —
+            reach out and let&apos;s talk about what you&apos;re building.
           </p>
         </Reveal>
 

@@ -16,9 +16,9 @@ export default function About() {
           <p className="eyebrow">Profile</p>
           <h2 className="section-title">Two ventures, one operator</h2>
           <p className="section-sub">
-            Sales &amp; operations professional with 6+ years building and
-            running two businesses — from international client delivery to
-            local logistics on the ground.
+            Full-stack web developer &amp; sales/operations professional with
+            6+ years building and running two businesses — from writing the
+            code to closing the sale and running logistics on the ground.
           </p>
         </Reveal>
 
@@ -28,8 +28,13 @@ export default function About() {
             managing international client projects, and{" "}
             <strong>NayaBazar.pk</strong> (local delivery startup) — handling
             everything from app design and launch to onboarding 100+ shops,
-            30,000+ downloads, and 100–150 daily deliveries. Skilled in project
-            management, team building, marketing, and end-to-end operations.
+            30,000+ downloads, and 100–150 daily deliveries. Alongside that, I
+            build software myself: most recently <strong>MorEazy POS</strong>, a
+            complete offline restaurant point-of-sale system — an Electron.js
+            desktop app paired with a PHP/MySQL licensing &amp; management
+            website — designed, coded, and shipped solo. Skilled in full-stack
+            development, project management, team building, marketing, and
+            end-to-end operations.
           </p>
         </Reveal>
 

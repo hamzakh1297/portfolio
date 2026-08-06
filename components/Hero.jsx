@@ -10,13 +10,16 @@ export default function Hero() {
             Hamza <span>Khalid</span>
           </h1>
 
-          <p className={styles.role}>Sales &amp; Operations Professional</p>
+          <p className={styles.role}>Full Stack Web Developer &amp; Sales Professional</p>
 
           <p className={styles.intro}>
-            I build things and I sell them — 6+ years running two businesses end to end.
-            Co-founded Naxotop PVT LTD, delivering web platforms for local &amp;
-            international clients across the world, and NayaBazar.pk, a delivery
-            startup I grew to 30,000+ app downloads from scratch.
+            I build things and I sell them — 6+ years running two businesses end to end,
+            and hands-on building the software behind them. Co-founded Naxotop PVT LTD,
+            delivering web platforms for local &amp; international clients across the
+            world, and NayaBazar.pk, a delivery startup I grew to 30,000+ app downloads
+            from scratch. More recently, I designed and built{" "}
+            <strong>MorEazy POS</strong> — a complete offline restaurant POS system —
+            end to end, solo.
           </p>
 
           <div className={styles.actions}>
@@ -43,8 +46,8 @@ export default function Hero() {
             />
           </div>
           <span className={styles.stamp}>
-            <span>Sales</span>
-            <span>Expert</span>
+            <span>Full-Stack</span>
+            <span>&amp; Sales</span>
           </span>
         </div>
       </div>
