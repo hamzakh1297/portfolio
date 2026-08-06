@@ -63,6 +63,10 @@
   animation-delay: 0.34s;
 }
 
+.intro strong {
+  color: var(--amber-soft);
+}
+
 .actions {
   margin-top: 30px;
   display: flex;

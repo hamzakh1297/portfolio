@@ -13,23 +13,29 @@ export default function Hero() {
           <p className={styles.role}>Full Stack Web Developer &amp; Sales Professional</p>
 
           <p className={styles.intro}>
-            I build things and I sell them — 6+ years running two businesses end to end,
-            and hands-on building the software behind them. Co-founded Naxotop PVT LTD,
-            delivering web platforms for local &amp; international clients across the
-            world, and NayaBazar.pk, a delivery startup I grew to 30,000+ app downloads
-            from scratch. More recently, I designed and built{" "}
-            <strong>MorEazy POS</strong> — a complete offline restaurant POS system —
-            end to end, solo.
+            I build things and I sell them — 6+ years running two businesses end
+            to end, and hands-on building the software behind them. Co-founded
+            Naxotop PVT LTD, delivering web platforms for local &amp;
+            international clients, and NayaBazar.pk, a delivery startup I grew
+            to 30,000+ app downloads. More recently, I designed and built{" "}
+            <strong>MorEazy POS</strong> — a complete offline restaurant
+            point-of-sale system — end to end, solo.
           </p>
 
           <div className={styles.actions}>
-            <a className="btn btn-primary" href="/Hamza_Khalid_Resume.pdf" download>
+            <a className="btn btn-primary" href="#contact">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                <path d="M7 10l5 5 5-5" />
-                <path d="M12 15V3" />
+                <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z" />
+                <path d="m22 6-10 7L2 6" />
               </svg>
-              Download Resume
+              Get in Touch
+            </a>
+            <a className="btn btn-ghost" href="#developed">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <polyline points="16 18 22 12 16 6" />
+                <polyline points="8 6 2 12 8 18" />
+              </svg>
+              View My Work
             </a>
           </div>
         </div>

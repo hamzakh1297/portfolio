@@ -179,6 +179,9 @@
     padding: 13px 0;
     border-bottom: 1px dashed rgba(240, 239, 230, 0.14);
   }
+  .navLinks a::after {
+    display: none;
+  }
   .navLinks a:last-child {
     border-bottom: none;
   }

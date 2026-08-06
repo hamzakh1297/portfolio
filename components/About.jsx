@@ -16,9 +16,9 @@ export default function About() {
           <p className="eyebrow">Profile</p>
           <h2 className="section-title">Two ventures, one operator</h2>
           <p className="section-sub">
-            Full-stack web developer &amp; sales/operations professional with
-            6+ years building and running two businesses — from writing the
-            code to closing the sale and running logistics on the ground.
+            Full-stack web developer &amp; sales professional with 6+ years
+            building and running two businesses — from writing the code to
+            closing the sale and running logistics on the ground.
           </p>
         </Reveal>
 

@@ -26,12 +26,12 @@ export const metadata = {
   metadataBase: new URL("https://hamza-khalid-portfolio.vercel.app"),
   title: "Hamza Khalid — Full Stack Web Developer & Sales Professional",
   description:
-    "Portfolio of Hamza Khalid — full stack web developer & sales professional, co-founder of Naxotop PVT LTD and NayaBazar.pk, based in Mian Channu, Punjab, Pakistan.",
+    "Portfolio of Hamza Khalid — full stack web developer & sales professional, co-founder of Naxotop PVT LTD and NayaBazar.pk, builder of MorEazy POS.",
   openGraph: {
     type: "website",
     title: "Hamza Khalid — Full Stack Web Developer & Sales Professional",
     description:
-      "Co-Founder at Naxotop PVT LTD & NayaBazar.pk — 50+ web projects managed, 30,000+ app downloads, 100+ shops onboarded on the ground, plus independently built full-stack products like MorEazy POS.",
+      "Full stack developer & sales professional — 50+ web projects, 30,000+ app downloads, and independently built products like MorEazy POS.",
     url: "https://hamza-khalid-portfolio.vercel.app/",
     siteName: "Hamza Khalid — Portfolio",
     images: [
@@ -47,7 +47,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Hamza Khalid — Full Stack Web Developer & Sales Professional",
     description:
-      "Co-Founder at Naxotop PVT LTD & NayaBazar.pk — 50+ web projects managed, 30,000+ app downloads, 100+ shops onboarded on the ground, plus independently built full-stack products like MorEazy POS.",
+      "Full stack developer & sales professional — 50+ web projects, 30,000+ app downloads, and independently built products like MorEazy POS.",
     images: ["/og-image.png"],
   },
 };

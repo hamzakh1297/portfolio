@@ -1,47 +1,48 @@
-.block {
+/* ============ PROJECT CARDS ROW ============ */
+.projectsRow {
   display: grid;
-  grid-template-columns: 0.95fr 1.05fr;
-  gap: 48px;
-  align-items: center;
-  margin-top: 56px;
-}
-
-.block:first-of-type {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
   margin-top: 44px;
 }
 
-.reverse .identity {
-  order: 2;
-}
-
-.reverse .coverWrap {
-  order: 1;
-}
-
-.identity {
+.projectCard {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projectCard:hover {
+  border-color: var(--amber);
+  box-shadow: 0 20px 44px rgba(21, 23, 31, 0.14);
+}
+
+.cardHead {
+  padding: 24px 24px 0;
 }
 
 .devBadge {
   display: inline-flex;
   align-items: center;
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--white);
   background: var(--teal);
-  padding: 5px 11px;
+  padding: 4px 10px;
   border-radius: 3px;
 }
 
 .kind {
-  margin-top: 16px;
+  margin-top: 12px;
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--amber);
@@ -49,77 +50,50 @@
 }
 
 .title {
-  margin-top: 6px;
+  margin-top: 4px;
   font-family: var(--font-display);
   font-weight: 700;
   text-transform: uppercase;
-  font-size: clamp(22px, 2.6vw, 30px);
+  font-size: clamp(20px, 2.2vw, 26px);
   letter-spacing: 0.01em;
   color: var(--ink);
-  line-height: 1.08;
+  line-height: 1.1;
 }
 
 .subtitle {
-  margin-top: 6px;
-  font-size: 14px;
+  margin-top: 4px;
+  font-size: 12.5px;
   color: var(--muted);
   font-family: var(--font-mono);
   letter-spacing: 0.01em;
 }
 
-.overview {
-  margin-top: 18px;
-  font-size: 15px;
-  line-height: 1.75;
-  color: var(--ink-soft);
-  max-width: 54ch;
-}
-
-.overview strong {
-  color: var(--ink);
-}
-
-.stack {
-  margin-top: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.coverWrap {
-  position: relative;
+/* ============ COVER IMAGE BUTTON ============ */
+.coverBtn {
+  display: block;
+  width: 100%;
+  margin: 16px 0 0;
+  padding: 0 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  text-align: left;
 }
 
 .mock {
   position: relative;
   background: var(--ink);
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 26px 50px rgba(21, 23, 31, 0.22);
   border: 1px solid var(--line);
-  transition: transform 0.4s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.4s ease;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease;
 }
 
-.mock:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 34px 64px rgba(21, 23, 31, 0.3);
-}
-
-.appBar {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 10px;
-  background: #1d2029;
-}
-
-.appTitle {
-  margin-left: 8px;
-  font-family: var(--font-mono);
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  color: rgba(240, 239, 230, 0.7);
+.coverBtn:hover .mock {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(21, 23, 31, 0.22);
 }
 
 .coverThumb {
@@ -130,87 +104,15 @@
 }
 
 .coverThumb img {
-  object-fit: cover;
-  object-position: top;
-  transition: transform 0.5s ease;
-}
-
-.mock:hover .coverThumb img {
-  transform: scale(1.03);
-}
-
-/* ============ SCREENS GRID ============ */
-.screensSection {
-  margin-top: 40px;
-}
-
-.screensSection:first-of-type {
-  margin-top: 56px;
-}
-
-.screensLabel {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--muted);
-  margin-bottom: 16px;
-  padding-bottom: 12px;
-  border-bottom: 1px dashed var(--line);
-}
-
-.screensLabel span {
-  color: var(--ink);
-  font-weight: 700;
-}
-
-.screensGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 14px;
-}
-
-.screenCard {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  background: transparent;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  font: inherit;
-  color: inherit;
-  text-align: left;
-}
-
-.screenThumb {
-  position: relative;
-  width: 100%;
-  aspect-ratio: 4 / 3;
-  border-radius: 6px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  background: var(--ink);
-  transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
-}
-
-.screenThumb img {
-  object-fit: cover;
   object-position: top;
   transition: transform 0.4s ease;
 }
 
-.screenCard:hover .screenThumb {
-  border-color: var(--amber);
-  transform: translateY(-3px);
-  box-shadow: 0 14px 26px rgba(21, 23, 31, 0.16);
+.coverBtn:hover .coverThumb img {
+  transform: scale(1.03);
 }
 
-.screenCard:hover .screenThumb img {
-  transform: scale(1.06);
-}
-
-.screenZoom {
+.coverOverlay {
   position: absolute;
   inset: 0;
   display: flex;
@@ -218,101 +120,164 @@
   justify-content: center;
   background: rgba(21, 23, 31, 0);
   opacity: 0;
-  transition: opacity 0.25s ease, background 0.25s ease;
+  transition: opacity 0.3s ease, background 0.3s ease;
 }
 
-.screenCard:hover .screenZoom {
+.coverBtn:hover .coverOverlay {
   opacity: 1;
-  background: rgba(21, 23, 31, 0.38);
+  background: rgba(21, 23, 31, 0.55);
 }
 
-.screenZoom svg {
-  width: 20px;
-  height: 20px;
-  color: #fff;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.screenName {
-  font-size: 12px;
-  font-weight: 600;
-  color: var(--ink-soft);
-}
-
-/* ============ CONNECTOR STRIP ============ */
-.connector {
-  margin-top: 64px;
-  padding: 32px;
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+.coverCta {
+  display: inline-flex;
   align-items: center;
-  gap: 14px;
-}
-
-.connectorNode {
+  gap: 8px;
   font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 700;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fff;
+  background: var(--amber);
+  padding: 10px 18px;
+  border-radius: 4px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.35);
+  transform: translateY(6px);
+  transition: transform 0.3s ease;
+}
+
+.coverBtn:hover .coverCta {
+  transform: translateY(0);
+}
+
+.coverCta svg {
+  width: 16px;
+  height: 16px;
+}
+
+.overview {
+  padding: 16px 24px 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--ink-soft);
+  flex: 1;
+}
+
+.stack {
+  padding: 14px 24px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+/* ============ CURVED CONNECTOR ============ */
+.connector {
+  margin-top: 48px;
+  padding: 28px 32px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+
+.connectorVisual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.connectorNode {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink);
   background: var(--white);
-  border: 1px solid var(--line);
-  padding: 10px 16px;
-  border-radius: 4px;
+  border: 2px solid var(--line);
+  padding: 14px 18px;
+  border-radius: 10px;
   white-space: nowrap;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  min-width: 110px;
 }
 
-.connectorLine {
+.connectorNode:hover {
+  border-color: var(--amber);
+  box-shadow: 0 6px 16px var(--glow);
+}
+
+.nodeIcon {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.connectorCurve {
   position: relative;
-  height: 2px;
-  background-image: repeating-linear-gradient(
-    to right,
-    var(--amber) 0,
-    var(--amber) 6px,
-    transparent 6px,
-    transparent 12px
-  );
-  background-size: 24px 2px;
-  animation: dashMove 1.4s linear infinite;
+  flex: 1;
+  min-width: 120px;
+  max-width: 300px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.connectorLine span {
-  position: relative;
+.curveSvg {
+  width: 100%;
+  height: 80px;
+  display: block;
+}
+
+.curvePath {
+  animation: dashFlow 1.6s linear infinite;
+}
+
+@keyframes dashFlow {
+  from { stroke-dashoffset: 0; }
+  to { stroke-dashoffset: -28; }
+}
+
+.curveLabel {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background: var(--card);
-  padding: 4px 10px;
+  padding: 4px 12px;
   font-family: var(--font-mono);
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 700;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--teal);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  white-space: nowrap;
 }
 
 .connectorText {
-  grid-column: 1 / -1;
-  margin-top: 8px;
+  margin-top: 18px;
   font-size: 13.5px;
   line-height: 1.7;
   color: var(--muted);
+  text-align: center;
 }
 
 .connectorText code {
   font-family: var(--font-mono);
-  font-size: 12px;
+  font-size: 11.5px;
   background: var(--paper-2);
   border: 1px solid var(--line);
-  padding: 1px 6px;
+  padding: 1px 5px;
   border-radius: 3px;
   color: var(--ink-soft);
 }
 
+/* ============ LIGHTBOX EXTRAS ============ */
 .lightboxEyebrow {
   font-family: var(--font-mono);
   font-size: 11px;
@@ -323,48 +288,29 @@
   margin-bottom: 6px;
 }
 
-@keyframes dashMove {
-  from {
-    background-position: 0 0;
-  }
-  to {
-    background-position: 24px 0;
-  }
-}
-
+/* ============ RESPONSIVE ============ */
 @media (max-width: 860px) {
-  .block {
+  .projectsRow {
     grid-template-columns: 1fr;
-    gap: 28px;
+    gap: 24px;
   }
-  .reverse .identity,
-  .reverse .coverWrap {
-    order: 0;
+  .connectorVisual {
+    flex-direction: column;
+    gap: 0;
   }
-  .identity {
-    align-items: flex-start;
+  .connectorCurve {
+    transform: rotate(90deg);
+    min-width: 80px;
+    max-width: 120px;
+    margin: -10px 0;
   }
   .connector {
-    grid-template-columns: 1fr;
-    text-align: center;
-    justify-items: center;
     padding: 24px 20px;
-  }
-  .connectorLine {
-    width: 60%;
-    margin: 4px 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .screensGrid {
-    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
-    gap: 10px;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .connectorLine {
+  .curvePath {
     animation: none;
   }
 }

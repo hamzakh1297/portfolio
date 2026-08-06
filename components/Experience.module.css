@@ -88,6 +88,11 @@
   object-fit: contain;
 }
 
+.logoEmoji {
+  font-size: 22px;
+  line-height: 1;
+}
+
 .stopHeading {
   flex: 1;
   min-width: 0;

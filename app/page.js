@@ -6,7 +6,8 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import DevelopedProjects from "@/components/DevelopedProjects";
 import Skills from "@/components/Skills";
-import Education from "@/components/Education";
+import Testimonials from "@/components/Testimonials";
+import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 
 export default function Home() {
@@ -21,7 +22,8 @@ export default function Home() {
         <Projects />
         <DevelopedProjects />
         <Skills />
-        <Education />
+        <Testimonials />
+        <Contact />
         <Footer />
       </main>
     </>
